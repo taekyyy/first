@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+   
+   <!-- Root Context: defines shared resources visible to all other web components -->
+   <context:component-scan base-package="com.itbank.service" />
+   <context:component-scan base-package="com.itbank.component" />
+   <mybatis-spring:scan base-package="com.itbank.model"/>
+   
+   <bean id="multipartResolver" 
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760" />
+        <property name="maxInMemorySize" value="10485760" />
+        <property name="defaultEncoding" value="utf-8" />
+    </bean>
+    
+   <!--    연결정보, dataSource, sqlSessionFactory, sqlSessionTemplate   -->
+    <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+    <!-- 오라클 9 이후로 드라이버 이름 변경 -->
+      <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
+      <property name="jdbcUrl" value="jdbc:oracle:thin:@221.164.9.200:30000:xe" />
+      <property name="username" value="c##itbank" />
+      <property name="password" value="it" />
+   </bean>
+   
+   <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+      <constructor-arg ref="hikariConfig" />
+   </bean>
+   
+   <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+      <property name="dataSource" ref="dataSource" />
+
+      <property name="configLocation" value="classpath:config/mybatis-config.xml" />
+      
+      <property name="mapperLocations">
+         <list>
+            <value>classpath:config/sqlmap-member.xml</value>
+            <value>classpath:config/sqlmap-board.xml</value>
+            <value>classpath:config/sqlmap-travel.xml</value>
+            <value>classpath:config/sqlmap-join.xml</value>
+            <value>classpath:config/sqlmap-reply.xml</value>
+         </list>
+      </property>
+      
+   </bean>
+   
+   <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate" destroy-method="close">
+      <constructor-arg ref="sqlSessionFactory" />
+   </bean>   
+   
+</beans>

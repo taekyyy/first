@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+	"-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.itbank.model.JoinDAO">
+	<select id="joinList" resultType="join">
+		SELECT * 
+		FROM (
+			SELECT ROWNUM RN, A.* 
+				FROM (
+						SELECT * 
+						FROM join
+						WHERE Joiner=#{useremail}
+						ORDER BY IDX DESC 
+						) A
+				)
+		WHERE RN BETWEEN #{start} AND #{end}
+
+	</select>
+</mapper>

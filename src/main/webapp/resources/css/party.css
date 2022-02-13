@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.party_left {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+.party_left > h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.party_board_nav {
+	height: 617px;
+}
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.party_board {
+    height: 67%;
+    overflow-y: scroll; 
+}
+.party_left > button {
+    position: absolute;
+    margin-right: 10px;
+    right: 0;
+}
+.board_page {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+.party_right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding: 100px 100px 100px 115px;
+    box-sizing: border-box;
+    transform-style:preserve-3d;
+   transform: perspective(935px) translateZ(-10vw) scale(1.2, 1);
+    
+}
+/* 모달모달 모달모달 모달모달 모달모달 모달모달 모달모달 모달모달 모달모달 모달모달*/
+.tripModal {
+    display: none; /*flex */
+    background-color: rgba(33, 33, 33, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.trip_inf_context {
+    width: 800px;
+    height: 557px;
+    background-color: white;
+    z-index: 2;
+    padding: 20px 75px 20px 90px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.trip_inf_context > h2 {
+     text-align: center;
+    margin-bottom: 0;
+
+}
+#tripInf_title {
+    height: 29px;
+    width: 585px;
+    border: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#tripInf_city {
+    border: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#tripInf_date {
+    border: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.tripInf_form > span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tripInf_form > input[type=number] {
+   width: 30px;
+   border: none;
+   border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+   font-size: 15px;
+}
+
+.tripInf_form > input:focus {outline: none;}
+
+.tripInf_form > label {
+	font-size: 15px;
+	color: black;
+	transition: 0.3s;
+} 
+.tripInf_form > label:hover {
+	color:rgba(33, 33, 33, 0.75);
+} 
+
+#gap {
+	height: 10px;
+}
+
+#writer {
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+#writer:focus {
+   outline: none;
+}
+input[type=number]:focus {outline: none;}
+
+textarea:focus {outline: none;}
+
+textarea[name="content"] {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+}
+.tripInf_form > input[type=submit] {
+    right: 0;
+}
+.tripInfBtn {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   justify-content: end;
+   right: 0;
+}
+#tripInf {
+ 	border-radius: 0;
+    background-color: white;
+    margin-right: 30px;
+    position: absolute;
+    right: 0;
+    height: 34px;
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 14px;
+    width: 100px;
+    margin-top: 7px;
+}
+#tripInf:hover {
+	background-color: rgba(30, 87, 132, 0.5);
+}
+.party_board_ul {
+   display: flex;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+   width: 951.5px;
+}
+.party_board_ul > li { 
+   padding: 10px;
+   border-bottom: 1px solid rgba(33,33,33,0.1335);
+}
+.party_board_ul > li:nth-child(1) {
+   width: 140px;
+}
+.party_board_ul > li:nth-child(2) {
+   width: 576.3px;
+}
+.party_board_ul > li:nth-child(3) {
+   width: 135.3px;
+}
+.party_board_ul > li:nth-child(4) {
+   width: 140px;
+}
+
+#party_board_title {
+   font-size: 15px;
+   font-weight: 700;
+   border-top: 1px solid black;
+}
+
+#party_board_list {
+   font-size: 14px;
+   text-align: center;
+   transition-duration: 0.4s;
+}
+#party_board_list:hover {
+   background-color: rgba(30, 87, 132, 0.1);
+}
+
+.toPartyInf {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+#partyModalBtn {
+	border: none;
+    background: white;
+    font-size: 17px;
+    background-color: rgba(30,87,132,0.87);
+    border-radius: 42px;
+    width: 81px;
+    color: white;
+    cursor: pointer;
+}
+.partyClose {
+    border: 0;
+    background-color: white;
+    font-size: 27px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    margin-right: 10px;
+    color: rgba(31,31,31,0.9);
+}
+.partyClose:hover {
+	color: gray;
+}

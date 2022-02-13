@@ -1,0 +1,496 @@
+@charset "utf-8";
+
+.mypageBtn {
+   border: none;
+   background-color: white;
+   font-weight: 700;
+   font-size: 20px;
+   padding: 0;
+}
+.userBtn {
+   border: none;
+   background-color: white;
+   font-weight: 700;
+   font-size: 22px;
+}
+
+#mypage_title {
+    width: 100%;
+    position: absolute;
+    margin-top: 80px;
+    padding: 20px 20px 20px 135px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: 700;
+}
+.list {
+    margin-top: 166px;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+}
+.list_left {
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid rgba(33, 33, 33, 0.3);
+    margin-top: 5px;
+    margin-left: 5%;
+    left: 0;
+    width: 12%;
+    height: 54.5%;
+}
+.list_right {
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    margin-right: 5%;
+    width: 76%;
+    height: 732.297px;
+}
+.list_top {
+    box-sizing: border-box;
+    height: 27%;
+    margin: 5px 0 28px;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid rgba(33, 33, 33, 0.3);
+    display: flex;
+    
+}
+
+.userInf2 {
+    width: 408px;
+    padding: 30px;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(33, 33, 33, 0.4);
+    display: flex;
+    justify-content: center;
+}
+.list_top > .userInf2:nth-child(4) {
+	border-right: 0;
+}
+
+.userInf2 > h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.userInf2 > span:nth-child(2) {
+    font-size: 22px;
+}
+.userInf2 > span:nth-child(3) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.userInf1 {
+    flex-direction: column;
+    padding: 10px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    border-right: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.userInf1 > img {
+    width: 110px;
+    display: flex;
+    margin: auto;
+}
+.userInf1 > span {
+    text-align: center;
+}
+.list_bottom { 
+    border:1px solid rgba(33, 33, 33, 0.3);
+    height: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    padding-left: 40px;
+}
+.list_bottom > .mypage_title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.list_bottom > .mypage_title > span {
+    font-size: 20px;
+}
+.board {
+    position: absolute;
+    width: 1393.19px;
+    height: 408px;
+}
+
+.mypage_board > li {
+   padding: 10px;
+}
+#join_board_title {
+   display: flex;
+   padding: 0;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 700;
+   margin: 0;
+   border-top: 1px solid black;
+   border-bottom: 1px solid rgba(33,33,33,0.1335);
+}
+#join_board_list {
+   display: flex;
+   font-size: 14px;
+   padding: 0;
+   text-align: center;
+   margin: 0;
+   transition-duration: 0.4s;
+   border-bottom: 1px solid rgba(33,33,33,0.1335);
+   height: 45px;
+}
+#join_board_list:hover {
+   background-color: rgba(30, 87, 132, 0.1);
+}
+.mypage_board > li:nth-child(1) {
+   width: 50px;
+}
+.mypage_board > li:nth-child(2) {
+   width: 75px;
+}
+.mypage_board > li:nth-child(3) {
+   width: 100px;
+}
+.mypage_board > li:nth-child(4) {
+   width: 622px;
+}
+.mypage_board > li:nth-child(5) {
+   width: 160px;
+}
+.mypage_board > li:nth-child(6) {
+   width: 130px;
+}
+.mypage_board > li:nth-child(7) {
+   width: 130px;
+}
+.mypage_board > li:nth-child(8) {
+   width: 130px;
+}
+/*    border: 1px solid rgba(33,33,33,0.1335); */
+.joinTable th {
+   width: 10px;
+}
+.list_left > nav > ul {
+    font-size: 20px;
+    font-weight: 600;
+}
+.list_left > nav > ul > li {
+    padding: 10px;
+}
+.mypage_board_paging {
+    width: 1391.19px;
+    height: 28px;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    color: rgba(31, 31, 31, 0.5);
+}
+.mypage_board_paging > a {
+    transition: 0.3s;
+    box-sizing:border-box;
+	color: rgba(31, 31, 31, 0.5);
+	
+}
+.mypage_board_paging > a:hover {
+	color: black;
+}
+
+.mypage_boardDelete {
+	right: 0;
+    position: absolute;
+    margin-right: 25px;
+    background: white;
+    width: 90px;
+    height: 28px;
+    cursor: pointer;
+    transition: 0.4s;
+    border: none;
+    font-weight: 700;
+}
+.mypage_boardDelete:hover {
+	color: white;
+	background-color: rgba(30, 87, 132, 0.7);
+}
+.myBoardBtn {
+	background: white;
+    width: 90px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 55px;
+    border: 0;
+    color: rgba(31, 31, 31, 0.8);
+}
+.myBoardBtn:hover {
+	color: white;
+	background-color: rgba(30, 87, 132, 0.7);
+}
+/* 회원 탈퇴 모달모달모달모달모달모달모달모달모달모달모달회원 탈퇴 회원 탈퇴 */
+.memberDelete {
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: white;
+    padding: 0;
+    color: black;
+    cursor: pointer;
+}
+.partyClose {
+	border: 0;
+    background-color: white;
+    font-size: 27px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    margin-right: 10px;
+    color: rgba(31,31,31,0.9);
+}
+.partyClose:hover {
+	color: gray;
+}
+.deleteModal {
+    display: none; /*flex */
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+.delete_overlay {
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+   position: absolute;
+   background-color: rgba(33, 33, 33, 0.3);
+}
+#delete_context {
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    z-index: 2;
+    padding: 20px;
+}
+#delete_context > h2 {
+    text-align: center;
+}
+#delete_context > .delete_context {
+    margin-bottom: 22px;
+    color: rgba(31, 31, 31, 0.8);
+}
+.delete_box {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 15px;
+}
+.user_delete {
+    height: 40px;
+    font-weight: 700;
+    border-color: rgba(33,33,33,0.2);
+    background-color: black;
+    color: white;
+    border-radius: 0;
+}
+.cancel {
+    background-color: rgb(247, 247, 247);
+    color: black;
+    margin-right: 15px;
+    border-radius: 0;
+    width: 69.06px;
+}
+/* 회원 탈퇴 끝*/
+
+
+.slide_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1335.19px;
+    height: 276px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 30px 10px 30px;
+    
+}
+.mypage_slide {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1339.19px;
+    height: 276px;
+    transition: left 0.5s ease-out;
+}
+.mypage_slide > li {
+    float: left;
+    padding-right: 30px;
+}
+.mypage_slide > li > img {
+    height: 276px;
+    width: 426px;
+}
+/* 슬라이드 방향키 */
+.mypage_controller {
+    display: flex;
+    justify-content: space-between;
+    width: 1368px;
+    box-sizing: border-box;
+    padding: 0 15px 0 15px; 
+    position: absolute;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgba(33, 33, 33, 0.3);
+}
+.prev {
+    cursor: pointer;
+}
+.prev:hover {
+    color: black;
+}
+.next {
+    cursor: pointer;
+}
+.next:hover {
+    color: black;
+}
+
+/* 수정모달*/												/* 수정모달*/
+.myboardModify {
+    display: flex; /*flex */
+    background-color: rgba(33, 33, 33, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+
+}
+.myboardClose {
+	border: 0;
+    background-color: white;
+    font-size: 27px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    margin-right: 10px;
+    color: rgba(31,31,31,0.9);
+}
+.myboardClose:hover {
+	color: gray;
+}
+.myboard_inf_context {
+    width: 800px;
+    height: 557px;
+    background-color: white;
+    z-index: 2;
+    padding: 20px 75px 20px 90px;
+    box-sizing: border-box;
+    position: absolute;
+}
+.myboard_inf_context > h2 {
+     text-align: center;
+    margin-bottom: 0;
+
+}
+#myboardInf_title {
+    height: 29px;
+    width: 585px;
+    border: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#myboardInf_city {
+    border: none;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.myboardInf_date {
+    border: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+
+.myboardInf_form > span {
+   font-size: 16px;
+   font-weight: 700;
+}
+.myboardInf_form > input:focus {outline: none;}
+
+.myboardInf_form > input[type=number] {
+   width: 30px;
+   border: none;
+   border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+   font-size: 15px;
+}
+
+.myboardInf_form > label {
+	font-size: 15px;
+	color: black;
+	transition: 0.3s;
+} 
+
+#writer {
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+#writer:focus {
+   outline: none;
+}
+input[type=number]:focus {outline: none;}
+
+textarea:focus {outline: none;}
+
+textarea[name="content"] {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    resize: none;
+}
+
+.myboardInf_form > input[type=submit] {
+    right: 0;
+}
+.modifyHidden { /* 모달 끄는 기능 */
+	display: none;
+}
+.mypageModifyBtn {
+    text-align: center;
+    margin-top: 4px;
+}
+#mypageModifyBtn {
+	border: none;
+    background: white;
+    font-size: 17px;
+    background-color: rgba(30,87,132,0.87);
+    border-radius: 42px;
+    width: 81px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+/* 수정모달 끝*/
+
+/* 위시리스트 틀*/
+.wishListBox {
+	position: absolute;
+    width: 1393.19px;
+    height: 408px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+

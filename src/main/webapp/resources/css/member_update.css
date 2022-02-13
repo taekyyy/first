@@ -1,0 +1,37 @@
+.modify_context {
+    margin: auto;
+    margin-top: 0;
+    width: 300px;
+    height: 455px;
+    display: block;
+    text-align: center;
+    margin-top: 145px;
+    padding: 20px 10px 10px 10px;
+    background-color: white;
+    z-index: 3;
+}
+
+.modify_form > p {
+    margin-top: 30px;
+}
+
+#email, #username, #userpw {
+    border-color: rgba(126, 126, 126, 0.2);
+    border-top: none;
+    border-left: none;
+}
+label > span {
+    float: left;
+    margin-left: 63px;
+    font-size: 12px;
+}
+#modify_btn {
+    position: absolute;
+    border: none;
+    background-color: green;
+    color: white;
+    margin-left: 47px;
+    
+}
+
+

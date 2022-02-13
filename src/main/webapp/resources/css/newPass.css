@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.search_password_title {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.search_password_title > div > h3 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+.search_password_title > p {
+    font-weight: 900;
+}
+
+.search_password_form {
+    position: relative;
+    left: 41%;
+    width: 600px;
+}
+
+.search_password_form > h3 {
+    font-size: 25px;
+    font-weight: 900;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.search_password_buttons {
+    margin-top: 20px;
+}
+
+.search_password_buttons > input {
+    margin-bottom: 10px;
+}
+
+.search_password_buttons > .btnByShin {
+	width: 378px;
+    height: 30px;
+    border: 1px solid #1e5784;
+    background-color: #1e5784;
+    border-radius: 0.2cm;
+    color: white;
+    font-size: large;
+    font-weight: 900;
+}
+
+.codeChecking {
+	display: none;
+}
+
+.editPw {
+	display: none;
+}

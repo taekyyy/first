@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+.cities_modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;   /*모달 끈상태이다 */
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 3;
+    background-color: rgba(31, 31, 31, 0.4);
+}
+
+.citiesClose {
+	border: 0;
+    background-color: white;
+    font-size: 27px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    margin-right: 10px;
+    color: rgba(31,31,31,0.9);
+}
+.citiesClose:hover {
+	color: gray;
+}
+.citiesCloseA {
+	border: 0;
+    background-color: white;
+    font-size: 27px;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    margin-right: 10px;
+    color: rgba(31,31,31,0.9);
+}
+.citiesCloseA:hover {
+	color: gray;
+}
+
+.cityContent {
+	height: 135px;
+	margin-top: 18px;
+	font-weight: 700;
+	display: flex;
+    align-items: center;
+}
+.cities_modal_content {
+    background-color: white;
+    width: 786px;
+    height: 458.891px;
+    display: flex;
+    position: relative;
+    z-index: 4;
+}
+
+.cities_content {
+    display: block;
+    width: 786px;
+    height: 458.891px;
+    box-sizing: border-box;
+    padding: 20px 70px 10px 85px;
+}
+/* .cities_content > div { */
+/*     margin-bottom: 60px; */
+/* } */
+.cities_content > .simbol {
+    width: auto;
+    height: 72px;
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+}
+    
+.cities_content > .simbol > .part {
+    width: 182px;
+    height: 72px;
+    display: block;
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-top: none;
+    border-bottom: none;
+}
+.imty_count {
+    text-align: center;
+    font-weight: 700;
+}
+.cities_content > .simbol > .part > .imty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    margin: 8px;
+}
+.imty_inf {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+#toPartyBtn {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-radius: 0;
+    right: 72px;
+    height: 30px;
+    width: 115px
+}
+.imtyBtn {
+   background-color: white;
+   border: none;
+   font-size: 28px;
+   margin-left: 55.655px;
+   color: pink;
+   transition: 0.3s;
+}
+.imtyBtn:hover {
+   color: deeppink;
+}
+.visa {
+	font-size: 14px;
+}

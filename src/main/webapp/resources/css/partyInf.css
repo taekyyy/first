@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+.boardTitle {
+	text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.partyInf_date {
+	font-size: 16px;
+    right: 0px;
+    position: absolute;
+    top: 110px;
+    margin-right: 40px;
+}
+.partyInf_purpose {
+	text-align: center;
+    font-size: 20px;
+    color: rgba(31, 31, 31, 0.85);
+    margin-bottom: 52px;
+}
+.partyInf_left {
+    position: absolute;
+    width: 36%;
+    margin-top: 80px;
+    height: 91%;
+}
+.partyInf_left > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.country {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.partyInf_right {
+	width: 1189px;
+    font-size: 18px;
+    height: 53%;
+    box-sizing: border-box;
+    padding-top: 17px;
+    margin: 20px;
+    border: 1px solid rgba(31, 31, 31, 0.2);
+}
+
+.partyInf_right_bottom {
+	width: 100%;
+    height: 370px;
+    position: absolute;
+    bottom: 0;
+}
+.partyInf_users {
+    width: 275px;
+    height: 248px;
+    position: absolute;
+    right: 0;
+    border: 1px solid rgba(31, 31, 31, 0.3);
+    border-radius: 13px;
+    margin: 20px;
+}
+.user_title {
+	text-align: center;
+	border-bottom: 1px solid rgba(31, 31, 31, 0.3);
+}
+.user_num {
+	text-align: center;
+	border-bottom: 1px solid rgba(31, 31, 31, 0.3);
+}
+.user_writer {
+	text-align: center;
+	border-bottom: 1px solid rgba(31, 31, 31, 0.3);
+}
+.users {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 120px;
+}
+.partyInf_btn {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.btn_centext {
+    display: flex;
+    flex-direction: column;
+}
+.btn_centext > button {
+    margin-bottom: 30px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+/* 슬라이드슬라이드슬라이드슬라이드슬라이드슬라이드슬라이드*/
+.country_img {
+    box-sizing: border-box;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.country_slider {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 543px;
+    height: 457.4px;
+    display: flex;
+    position: relative;
+    transition: left 0.5s ease-out;
+    right: 0;
+    
+}
+.country_slider > li {
+    float: left;
+    padding-right: 112px; 
+}
+.country_slider > li > img {
+    width: 543px;
+    height: 457.4px;
+}
+/* 화살표 컨트롤러 */
+.partyInf_p {
+	margin-left: 72px;
+}
+.partyInf_n {
+	margin-right: 72px;
+}
+.planInfo {
+		position: absolute;
+		left: 36%;
+		top: 8.5%;
+		width: 1227px;
+		height: 880px;
+}
+
+.partyInf_replyBox {
+	position: absolute;
+    margin: 20px;
+    width: 888px;
+    height: 328px;
+}
+.replyList {
+	
+}
+.replyInsert {
+	border: 1px solid rgba(31, 31, 31, 0.3);
+    color: #333;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 6px 20px;
+    width: 886px;
+    height: 90px;
+    margin-bottom: 10px;
+    position: absolute;
+}
+#replyWriter {
+	border: none;
+    width: 155px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(31, 31, 31, 0.8);
+    margin-bottom: 3px;
+}
+#replyWriter:focus {
+	outline: none;
+}
+.reply_load {
+	position: absolute;
+    right: 0;
+    bottom: 11px;
+    margin-right: 24px;
+}
+.replyInsert > textarea {
+	border: none;
+}
+
+#reply_loadBtn {
+	cursor: pointer;
+    background-color: rgba(30, 87, 132, 0.3);
+    height: 42px;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.2cm;
+    position: relative;
+    top: -10px;
+}
+.comment {
+	overflow-y: scroll;
+    position: absolute;
+    bottom: 0;
+    width: 886px;
+    height: 215px;
+    border: 1px solid rgba(31, 31, 31, 0.3);
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.updateReplyWriter {
+	font-size: 13px;
+	font-weight: 700;
+}
+
+.updateReplyDate {
+	font-size: 13px;
+	color: rgba(31, 31, 31, 0.5);
+}
+.updateReplyBox {
+	position: relative;
+    width: 833px;
+    border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+    padding-bottom: 10px;
+}
+.ReplyBtnBox {
+	position: absolute;
+    right: 0px;
+    top: 15px;
+}
+#deleteReplyBtn {
+    border: none;
+    background-color: white;
+    width: 90px;
+    height: 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#deleteReplyBtn:hover {
+    background-color: rgba(30, 87, 132, 0.3);
+}
+.partyInf_content {
+	text-align: center;
+	margin-top: 11px;
+}
+.partyInf_content > textarea {
+	border: none;
+    resize: none;
+    width: 1137px;
+    height: 172px;
+    border-top: 1px solid rgba(31, 31, 31, 0.2);
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+.partyInf_content > textarea:focus {outline: none;}
+.partyInf_joinBtn {
+	margin-top: 31px;
+    width: 1188px;
+    height: 70px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+#button1 {
+   height: 60px;
+    width: 213px;
+    border: 1px solid;
+    background-color: rgba(30, 87, 132, 0.75);
+    color: white;
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+    transition: all 0.9s, color 0.3s;
+    position: absolute;
+    margin: 0 31px 20px 0;
+    font-size: 30px;
+    border: lightgray;
+    right: 0;
+}
+#button1:hover {
+   box-shadow: 0 80px 0 0 rgba(0,0,0,0.25) inset, 
+            0 -80px 0 0 rgba(0,0,0,0.25) inset;
+}
+
+.btnByPre {
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 20px 51px 20px 0;
+    width: 213px;
+    height: 60px;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(30, 87, 132, 0.2);
+    border: 1px solid lightgray;
+    transition: all 0.9s, color 0.3s;
+    border-radius: 0.2cm;
+}
+.btnByPre:hover {
+	box-shadow: 0 80px 0 0 rgba(0,0,0,0.25) inset, 
+            0 -80px 0 0 rgba(0,0,0,0.25) inset;
+}
