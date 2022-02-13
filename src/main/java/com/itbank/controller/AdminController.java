@@ -37,7 +37,7 @@ public class AdminController {
 	@Autowired private TravelService ts;
 	@Autowired private ReplyService rs;
 	
-	
+	// 관리자 페이지 수정
 	@GetMapping("/admin")
 	public ModelAndView admin(String search 
 							, HttpSession session
